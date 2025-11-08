@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "委派練習", "委派練習\委派練習.csproj", "{3278079D-FFAB-4CC1-AB68-B9B048438FA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Action&Func練習", "Action&Func練習\Action&Func練習.csproj", "{F80D999C-9453-4120-AB7F-98C7A0781153}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3278079D-FFAB-4CC1-AB68-B9B048438FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3278079D-FFAB-4CC1-AB68-B9B048438FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3278079D-FFAB-4CC1-AB68-B9B048438FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3278079D-FFAB-4CC1-AB68-B9B048438FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F80D999C-9453-4120-AB7F-98C7A0781153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80D999C-9453-4120-AB7F-98C7A0781153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80D999C-9453-4120-AB7F-98C7A0781153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80D999C-9453-4120-AB7F-98C7A0781153}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F76D5C1D-DF38-426C-9028-0B3F710A821F}
+	EndGlobalSection
+EndGlobal

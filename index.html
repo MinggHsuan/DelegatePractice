@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+// function Test()
+// {
+//     console.log("test!")
+// }
+// Test()
+
+// var test=function()
+// {
+//    console.log("test!!!")
+// }
+// test()
+// function DoSomething(callback)
+// {
+//     callback()
+// }
+// DoSomething(test)
+
+// function DoSomething(callback)
+// {
+//     for(var i=0;i<10;i++)
+//     {
+//         callback(i)
+//     }
+// }
+// var testFun=function(number)
+// {
+//     console.log(number)
+// }
+// testFun(10)
+
+// DoSomething(x=>console.log("say hello:"+x))
+
+
+
+// Select Where Any 給做出來
+
+
+var datas = [1,2,3,4,5,6,7,8,9,10];
+// var newDatas = datas.map(x=>x*2);
+// var filterDatas = datas.filter(x=>x%2==0);
+// console.log(filterDatas)
+
+
+// multiply = function(x) { return x; }
+// filters=function(x) { return x%2==0; }
+// Contain=function(x) { return x==2; }
+
+
+Array.prototype.Select = function(callback) {
+  var newarray = [];
+  for (var i = 0; i < datas.length; i++) {
+    newarray.push(callback(datas[i]));
+  }
+  return newarray;
+};
+
+var newarray=datas.Select(x=>x*3)
+console.log(newarray)
+
+
+Array.prototype.Where =function(callback){
+    var newarray = [];
+    for (var i = 0; i < datas.length; i++) {
+        if(callback(datas[i])==true)
+        {
+            newarray.push(datas[i]);
+        }
+        continue
+    }
+    return newarray;
+}
+var filterarray=datas.Where(x=>x%2==0)
+console.log(filterarray)
+
+
+Array.prototype.Any =function(callback){
+    for (var i = 0; i < datas.length; i++) {
+        if(callback(datas[i])==true)
+        {
+            return true
+        }
+    }
+    return false
+}
+var bool=datas.Any(x=>x==9)
+console.log(bool)
+
+
+</script>
